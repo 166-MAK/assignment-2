@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="overflow-x-hidden" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,9 @@
     />
     <title>Assignment 2</title>
   </head>
-  <body class="bg-[#1A0B2E]">
+  <body class="bg-[#1A0B2E] overflow-x-hidden max-sm:mx-3">
     <nav
-      class="bg-[#1A0B2E] py-4 px-40 flex justify-between text-white border-b-2 border-gray-500"
+      class="bg-[#1A0B2E] py-4 lg:px-40 flex justify-between text-white border-b-2 border-gray-500 "
     >
       <h3 class="text-4xl font-bold relative inline-block">
         Tech<span
@@ -24,23 +24,25 @@
         >
       </h3>
 
-      <ul class="flex space-x-3">
+      <ul class="flex space-x-3 max-sm:hidden">
         <li><a href="">About</a></li>
         <li><a href="">Episodes</a></li>
         <li><a href="">Host</a></li>
       </ul>
 
+      <img class="h-8 lg:hidden" src="./assets/hamburger-menu.png" alt="">
+
       <button
-        class="px-5 rounded-full bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold"
+        class="px-5 rounded-full bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold max-sm:hidden"
       >
         Subscribe <i class="fa-solid fa-arrow-right"></i>
       </button>
     </nav>
 
     <section
-      class="bg-[url('./assets/hero-bg.png')] bg-contain bg-no-repeat w-full h-screen py-20"
+      class="bg-[url('./assets/hero-bg.png')] bg-contain bg-no-repeat bg-cover w-full h-screen py-20 "
     >
-      <div class="w-[500px] h-[500px] mx-auto relative">
+      <div class="max-w-[500px] w-full h-[500px] mx-auto relative">
         <div
           class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-contain w-[290px] h-[290px] flex items-center justify-center mx-auto"
         >
@@ -74,7 +76,7 @@
       </div>
     </section>
 
-    <section class="mt-10 px-40 py-20">
+    <section class="lg:mt-10 lg:py-20 lg:px-40 ">
       <div class="text-white text-center space-y-8">
         <h3 class="text-5xl font-bold">About the Podcast</h3>
         <div class="space-y-3">
@@ -96,7 +98,7 @@
 
       <div class="w-full border text-white my-20"></div>
 
-      <div class="text-white flex justify-between">
+      <div class="text-white flex max-sm:flex-wrap max-sm:gap-10 justify-between">
         <div class="flex flex-col space-y-2">
           <span class="font-extrabold text-5xl text-[#00FF88]">150k+</span>
           <p>Monthly Listeners</p>
@@ -116,10 +118,10 @@
       </div>
     </section>
 
-    <section class="bg-[#230E3D] w-full px-40 text-white py-20">
+    <section class="bg-[#230E3D] w-full lg:px-40 text-white py-20 ">
       <h3 class="text-5xl font-bold text-center">Why Choose TechWave</h3>
 
-      <div class="grid grid-cols-3 grid-rows-2 gap-5 mt-10">
+      <div class=" max-sm:space-y-5 lg:grid grid-cols-3 grid-rows-2 gap-5 mt-10">
         <div class="bg-[#35116540] row-span-2 px-5 py-20 rounded-3xl space-y-3">
           <img src="./assets/headphone.png" alt="" />
           <h4 class="font-bold text-[24px]">Premium Audio Quality</h4>
@@ -165,10 +167,10 @@
       </div>
     </section>
 
-    <section class="text-white px-40 py-20">
+    <section class="text-white lg:px-40 py-20 ">
       <h3 class="text-5xl font-bold text-center">Featured Episodes</h3>
 
-      <div class="grid grid-cols-3 gap-5 mt-10">
+      <div class="grid lg:grid-cols-3 gap-5 mt-10">
         <div class="bg-[#35116540] rounded-3xl overflow-hidden">
           <div
             class="bg-[url('./assets/pod1.jpg')] bg-cover bg-center h-[200px] w-full flex flex-col justify-center items-center"
@@ -200,14 +202,14 @@
           </div>
           <div class="p-3">
             <h4 class="font-bold text-[24px]">
-              The Future of AI in Everyday Life
+              Building Better Habits for Remote Work
             </h4>
             <p>
-              Exploring how artificial intelligence is transforming our daily
-              routines and what to expect in the next decade.
+              Practical strategies for staying productive and maintaining
+              work-life balance in a remote environment.
             </p>
             <span class="flex items-center gap-1 text-[#00FF88]"
-              ><img class="h-4" src="./assets/clock.png" alt="" />42min</span
+              ><img class="h-4" src="./assets/clock.png" alt="" />35min</span
             >
           </div>
         </div>
@@ -221,50 +223,82 @@
           </div>
           <div class="p-3">
             <h4 class="font-bold text-[24px]">
-              The Future of AI in Everyday Life
+              Career Growth in Tech: A Roadmap
             </h4>
             <p>
-              Exploring how artificial intelligence is transforming our daily
-              routines and what to expect in the next decade.
+              Expert advice on navigating your tech career from junior developer
+              to senior leadership roles.
             </p>
             <span class="flex items-center gap-1 text-[#00FF88]"
-              ><img class="h-4" src="./assets/clock.png" alt="" />42min</span
+              ><img class="h-4" src="./assets/clock.png" alt="" />51min</span
             >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="px-40 text-white">
+    <section class="lg:px-40 text-white ">
       <h3 class="text-5xl font-bold text-center">Featured Episodes</h3>
-      <div class="bg-[#35116540] p-5 rounded-3xl space-y-3 flex justify-center items-center mt-10 gap-10">
+      <div
+        class="bg-[#35116540] p-5 rounded-3xl space-y-3 flex max-sm:flex-col justify-center items-center mt-10 gap-10"
+      >
         <img src="./assets/host.png" alt="" />
         <div>
           <h4 class="font-bold text-[24px]">Exclusive Interviews</h4>
-        <p>
-          Get unprecedented access to industry titans, startup founders, and
-          tech visionaries. Our host secures exclusive conversations you won't
-          find anywhere else, diving deep into their journeys, failures, and
-          success strategies.
-        </p>
-          <div class="flex  gap-5 mt-3">
-          <div class="border border-[#533C72] p-2 rounded-full">
-            <img class="h-5" src="./assets/linkedin.png" alt="">
-          </div>
-          <div class="border border-[#533C72] p-2 rounded-full">
-            <img class="h-5" src="./assets/x.png" alt="">
-          </div>
-          <div class="border border-[#533C72] p-2 rounded-full">
-            <img class="h-5" src="./assets/instagram.png" alt="">
-          </div>
-          <div class="border border-[#533C72] p-2 rounded-full">
-            <img class="h-5" src="./assets/youtube.png" alt="">
-          </div>
-            
-            
+          <p>
+            Get unprecedented access to industry titans, startup founders, and
+            tech visionaries. Our host secures exclusive conversations you won't
+            find anywhere else, diving deep into their journeys, failures, and
+            success strategies.
+          </p>
+          <div class="flex gap-5 mt-3">
+            <div class="border border-[#533C72] p-2 rounded-full">
+              <img class="h-5" src="./assets/linkedin.png" alt="" />
+            </div>
+            <div class="border border-[#533C72] p-2 rounded-full">
+              <img class="h-5" src="./assets/x.png" alt="" />
+            </div>
+            <div class="border border-[#533C72] p-2 rounded-full">
+              <img class="h-5" src="./assets/instagram.png" alt="" />
+            </div>
+            <div class="border border-[#533C72] p-2 rounded-full">
+              <img class="h-5" src="./assets/youtube.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer
+      class="text-white bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-center bg-cover mt-20 "
+    >
+      <div class="flex flex-col justify-center items-center py-15 space-y-5">
+        <h3 class="text-4xl font-bold relative ">
+        Tech<span
+          class="bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-transparent bg-clip-text"
+          >Wave</span
+        >
+      </h3>
+      <div class="max-sm:space-y-5 lg:flex gap-9">
+        <div class="flex gap-2">
+          <img class="h-5" src="./assets/spotify.png" alt="" />
+          <span>spotify</span>
+        </div>
+        <div class="flex gap-2">
+          <img class="h-5" src="./assets/apple-podcast.png" alt="" />
+          <span>Apple Podcasts</span>
+        </div>
+        <div class="flex gap-2">
+          <img class="h-5" src="./assets/youtube-podcast.png" alt="" />
+          <span>YouTube</span>
+        </div>
+        <div class="flex gap-2">
+          <img class="h-5" src="./assets/twitter.png" alt="" />
+          <span>Twitter</span>
+        </div>
+      </div>
+      <p>© 2026 TechWave Podcast. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
