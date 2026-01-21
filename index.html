@@ -1,11 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Assignment 2</title>
-</head>
-<body>
-    hello world
-</body>
+  </head>
+  <body>
+    <nav
+      class="bg-[#1A0B2E] py-4 px-20 flex justify-between text-white border-b-2 border-red-600"
+    >
+      <h3 class="text-4xl font-bold relative inline-block">
+        Tech<span
+          class="bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-transparent bg-clip-text"
+          >Wave</span
+        >
+      </h3>
+
+      <ul class="flex space-x-3">
+        <li><a href="">About</a></li>
+        <li><a href="">Episodes</a></li>
+        <li><a href="">Host</a></li>
+      </ul>
+
+      <button
+        class="border px-5 rounded-full bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold"
+      >
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </nav>
+
+    <section
+      class="bg-[url('./assets/hero-bg.png')] bg-contain bg-no-repeat w-full h-screen py-20"
+    >
+      <div class="w-[500px] h-[500px] mx-auto border">
+        <div
+        class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-contain w-[290px] h-[290px] flex items-center justify-center mx-auto"
+      >
+        <i class="fa-solid fa-microphone text-[150px] text-white"></i>
+      </div>
+      <div class="text-white">
+        <h3 class="text-center text-6xl font-bold mt-10">TechWave</h3>
+        <p class="text-center mt-3">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+
+        <div class="flex justify-center  gap-x-3 mt-5">
+          <button class="border rounded-full bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold h-10 px-5 gap-x-2 flex items-center">
+            <img src="./assets/spotify.png" alt="">Listen on Spotify
+          </button>
+          <button class="border rounded-full px-10 flex items-center gap-3 text-[#00FF88]">
+            <img class="h-5" src="./assets/message.png" alt="">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+  </body>
 </html>
